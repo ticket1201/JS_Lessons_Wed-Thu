@@ -1,10 +1,10 @@
 console.log('lesson 2');
 
 // Lexical environment
-// http://jsflow.org/docs/lex-env/
+// http://jsflow.org/docs/lex-env/ +
 
 //// Closure
-// https://learn.javascript.ru/closure
+// https://learn.javascript.ru/closure+
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures
 // https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-%D1%80%D0%B0%D0%B7-%D0%B8-%D0%BD%D0%B0%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0-c211805b6898
 // https://www.youtube.com/watch?v=pahO5XjnfLA
@@ -21,10 +21,19 @@ console.log('lesson 2');
 // https://www.youtube.com/watch?v=Kuq6oIN3PH0
 
 
-// Task 01
+// Task 01 +
 // Реализовать функцию sum которая суммирует 2 числа следующим образом sum(3)(6) === 9
 
-// Task 02
+// const sum = (a:number) => {
+//     let res = 0
+//     return (b:number) => {
+//         return a + b
+//     }
+// }
+//
+// console.log(sum(3)(6))
+
+// Task 02 +
 // Реализовать функцию makeCounter которая работает следующим образом:
 // const counter = makeCounter();
 // counter(); // 1
@@ -33,6 +42,21 @@ console.log('lesson 2');
 // counter2(); // 1
 // counter(); // 3
 
+// const makeCounter = () => {
+//     let count = 0
+//     return () => {
+//       return  console.log(++count)
+//     }
+// }
+//
+// const counter = makeCounter();
+// counter(); // 1
+// counter(); // 2
+// const counter2 = makeCounter();
+// counter2(); // 1
+// counter();// 3
+
+
 // Task 03
 // Переписать функцию из Task 02 так, что бы она принимала число в качестве аргумента и это число было стартовым значением счетчика
 // и возвращала следующий объект методов:
@@ -40,6 +64,23 @@ console.log('lesson 2');
 // decrease: -1
 // reset: установить счетчик в 0;
 // set: установить счетчик в заданное значение;
+
+// const makeCounter = (a:number) => {
+//     let count = a
+//     return {
+//         increase: () => ++a,
+//         decrease: () => --a ,
+//         reset: () => a = 0,
+//         set: (b:number) => a = b,
+//     }
+// }
+//
+// let counter = makeCounter(0)
+//
+// console.log(counter.increase())
+// console.log(counter.increase())
+// console.log(counter.decrease())
+// console.log(counter.reset())
 
 // Task 04*
 // Реализовать функцию superSum которая принимает число в качестве аргумента, которое указывает на количество слагаемых
