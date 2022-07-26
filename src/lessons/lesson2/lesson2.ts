@@ -4,21 +4,21 @@ console.log('lesson 2');
 // http://jsflow.org/docs/lex-env/ +
 
 //// Closure
-// https://learn.javascript.ru/closure+
-// https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures
-// https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-%D1%80%D0%B0%D0%B7-%D0%B8-%D0%BD%D0%B0%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0-c211805b6898
-// https://www.youtube.com/watch?v=pahO5XjnfLA
+// https://learn.javascript.ru/closure +
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures +
+// https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-%D1%80%D0%B0%D0%B7-%D0%B8-%D0%BD%D0%B0%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0-c211805b6898 +
+// https://www.youtube.com/watch?v=pahO5XjnfLA  +
 
 //// Сurrying
-// https://learn.javascript.ru/currying-partials
-// https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-%D0%BA%D0%B0%D1%80%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-javascript-5ec4a1d88827
+// https://learn.javascript.ru/currying-partials +
+// https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-%D0%BA%D0%B0%D1%80%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-javascript-5ec4a1d88827 +
 
 // Pattern Module
-// https://habr.com/ru/company/ruvds/blog/419997/
+// https://habr.com/ru/company/ruvds/blog/419997/ +
 
 // Recursion
-// https://learn.javascript.ru/recursion
-// https://www.youtube.com/watch?v=Kuq6oIN3PH0
+// https://learn.javascript.ru/recursion +
+// https://www.youtube.com/watch?v=Kuq6oIN3PH0 +
 
 
 // Task 01 +
@@ -96,6 +96,104 @@ console.log('lesson 2');
 
 // Task 05
 // решить все задачи по рекурсии которые даны в конце статьи https://learn.javascript.ru/recursion
+
+//Напишите функцию sumTo(n), которая вычисляет сумму чисел 1 + 2 + ... + n.
+
+// const sumTo = (n:number):number => {
+//     return n === 1 ? 1 : n + sumTo(n-1)
+// }
+//
+// console.log(sumTo(100))
+
+// Вычислить факториал  n! = n * (n - 1) * (n - 2) * ...*1
+
+// const factorial = (n:number):number => {
+//     return n === 1 ? 1 : n * factorial(n-1)
+// }
+//
+// console.log(factorial(3))
+
+// const fib = (n:number):number => {
+//     // return (n === 1) || (n === 2) ? 1 : fib(n-2) + fib(n-1)
+//     let a = 1;
+//     let b = 1;
+//     for(let i = 3; i <= n; i++){
+//         let c = a + b;
+//         a = b
+//         b = c
+//     }
+//     return b
+// }
+//
+// console.log(fib(77))
+
+//Напишите функцию printList(list), которая выводит элементы списка по одному.
+
+/*let list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+   }
+};*/
+
+
+/*
+const printList = (list: { value:number, next:any }):void => {
+    let next = list.next;
+    console.log(list.value)
+    if(next !== null){
+        return printList(next)
+    }
+}
+*/
+
+
+
+
+/*const printList = (list: { value:number, next:any }):void => {
+    while(list !== null){
+        console.log(list.value)
+        list = list.next
+    }
+
+}*/
+
+//Выведите односвязный список из предыдущего задания Вывод односвязного списка в обратном порядке.
+
+/*
+const printList = (list: { value:number, next:any }):void => {
+    if(list.next !== null){
+       printList(list.next)
+    }
+    console.log(list.value)
+}
+
+printList(list)
+*/
+
+
+
+/*const printList = (list: { value:number, next:any }):void => {
+    let arr: any[] = []
+    while(list !== null) {
+        arr = [...arr, list.value]
+        list = list.next
+    }
+    for(let i = arr.length-1; i >= 0; i--){
+        console.log(arr[i])
+    }
+}
+
+printList(list)*/
+
+
 
 // Task 06
 // написать функцию, которая повторяет функционал метода flat массива на всю глубину.
