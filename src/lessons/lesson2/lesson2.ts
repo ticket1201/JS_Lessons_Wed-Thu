@@ -198,5 +198,22 @@ printList(list)*/
 // Task 06
 // написать функцию, которая повторяет функционал метода flat массива на всю глубину.
 
+/*
+const flat = (arr:any[]):number[] => {
+    let res:number[] = [];
+    for (const arrElement of arr) {
+        if(Array.isArray(arrElement)){
+            res = [...res, ...flat(arrElement)]
+        }
+        else {
+            res = [...res, arrElement]
+        }
+    }
+    return res
+}
+
+console.log(flat([[1,[5,5]],[2,[1,2,[5,3]]],[3]]))
+*/
+
 // just a plug
 export default () => {};
