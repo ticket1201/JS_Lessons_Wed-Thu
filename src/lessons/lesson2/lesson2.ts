@@ -94,6 +94,32 @@ console.log('lesson 2');
 
 // P.S. типизируйте только аргументы, а при вызове функции используйте @ts-ignore
 
+
+
+/*const superSum = (n:number) => {
+    const sum = (...args:number[]):number => {
+        debugger
+        let anon = (...args2:number[]) => {
+          return args2.reduce( (acc,num) => acc + num, 0 )
+        }
+
+        let res = anon(...args)
+
+        if(args.length === n){
+           return  res
+        }
+
+        else {
+            // @ts-ignore
+            return superSum(n-1) + res
+        }
+    }
+    return n === 0 ? 0 : sum;
+}
+
+// @ts-ignore
+console.log( superSum(2)(1)(3) )*/
+
 // Task 05
 // решить все задачи по рекурсии которые даны в конце статьи https://learn.javascript.ru/recursion
 
