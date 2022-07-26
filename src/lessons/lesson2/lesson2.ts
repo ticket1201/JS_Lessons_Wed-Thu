@@ -96,29 +96,40 @@ console.log('lesson 2');
 
 
 
-/*const superSum = (n:number) => {
+const superSum = (n:number):any => {
     const sum = (...args:number[]):number => {
-        debugger
-        let anon = (...args2:number[]) => {
-          return args2.reduce( (acc,num) => acc + num, 0 )
+        let anon = (...args:number[]) => {
+          return args.reduce( (acc,num) => acc + num, 0 )
         }
 
-        let res = anon(...args)
 
-        if(args.length === n){
-           return  res
+        if(args.length >= n){
+           return anon(...args)
         }
 
         else {
             // @ts-ignore
-            return superSum(n-1) + res
+            return (...args2) => {
+                return sum.apply(this, args.concat(args2));
+            }
         }
     }
+
     return n === 0 ? 0 : sum;
 }
 
-// @ts-ignore
-console.log( superSum(2)(1)(3) )*/
+
+console.log( superSum(3)(2)(5)(3) )
+
+console.log( superSum(3)(2)(5,3) )
+
+console.log( superSum(3)(2,5,3) )
+
+console.log( superSum(3)(2,5)(3) )
+
+console.log( superSum(3)(2,5)(3,9) )
+
+
 
 // Task 05
 // решить все задачи по рекурсии которые даны в конце статьи https://learn.javascript.ru/recursion
