@@ -47,6 +47,10 @@ let p = new Promise( (rej) => {
 // Получите данные промиса и выведите их в консоль
 
 
+/*let p = new Promise( (res) => {
+    setTimeout( () => res('Promise Data'), 3000)
+} ).then((data)=>console.log(data))*/
+
 // Task 05
 // Создайте литерал объекта handlePromise со следующими свойствами:
 // promise, resolve, reject, onSuccess, onError
