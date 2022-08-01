@@ -65,6 +65,38 @@ let p = new Promise( (rej) => {
 // resolve и reject. Следующие два обработчика запускают методы resolve и reject.
 
 
+/*
+let handlePromise = {
+    promise: null,
+    resolve: null,
+    reject: null,
+    onSuccess: (word: string) => console.log(`Promise is resolved with data: ${word}`),
+    onError: (word: string) => console.log(`Promise is rejected with error: ${word}`)
+}
+
+let create = document.querySelector('#btn-create-promise')
+let resolve = document.querySelector('#btn-resolve-promise')
+let reject = document.querySelector('#btn-reject-promise')
+
+
+create && create.addEventListener('click', () => {
+    return handlePromise.promise == new Promise((res, rej) => {
+        // @ts-ignore
+        res = (data:string) => handlePromise.onSuccess(data)
+        rej = (data:string) => handlePromise.onError(data)
+        // @ts-ignore
+        handlePromise.resolve = res
+        // @ts-ignore
+        handlePromise.reject = rej
+    })
+})
+// @ts-ignore
+resolve.addEventListener('click', () => handlePromise.resolve('wow'))
+// @ts-ignore
+reject.addEventListener('click', () => handlePromise.reject('sad'))
+*/
+
+
 // Task 06
 // Создайте промис, который через 1 с возвращает строку "My name is".
 // Создайте функцию onSuccess, которая получает один параметр,
