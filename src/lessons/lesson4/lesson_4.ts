@@ -104,6 +104,16 @@ reject.addEventListener('click', () => handlePromise.reject('sad'))
 // Создайте функцию print, которая выводит в консоль значение своего параметра
 // Добавьте два метода then и передайте созданные функции.
 
+/*let onSuccess = (word: unknown) => word + ' Anton';
+let print = (param: unknown) => {
+    console.log(param)
+}
+
+let p = new Promise((res) => {
+    setTimeout(() => res('My name is'), 1000)
+})
+    p.then((data) => onSuccess(data))
+    .then(data => print(data))*/
 
 // Task 7
 // Создайте три промиса. Первый промис возвращает объект { name: "Anna" } через 2с,
