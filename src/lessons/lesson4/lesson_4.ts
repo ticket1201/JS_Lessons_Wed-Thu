@@ -21,6 +21,12 @@ setTimeout( ()=>{
 // и возвращает строку 'Promise Data'
 // Получите данные промиса и выведите их в консоль
 
+/*
+let p = new Promise( (res) => {
+    res('Promise Data')
+} ).then((data)=>console.log(data))
+*/
+
 
 // Task 03
 // Создайте промис, который после создания сразу же переходит в состояние rejected
