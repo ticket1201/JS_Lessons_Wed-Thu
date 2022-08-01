@@ -33,6 +33,12 @@ let p = new Promise( (res) => {
 // и возвращает строку 'Promise Error'
 // Получите данные промиса и выведите их в консоль
 
+/*
+let p = new Promise( (rej) => {
+    rej('Promise Error')
+} ).then((data)=>console.log(data))
+*/
+
 
 // Task 04
 // Создайте промис, который переходит в состояние resolved через 3с.
