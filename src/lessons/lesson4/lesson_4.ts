@@ -121,7 +121,22 @@ let p = new Promise((res) => {
 // Получите результаты работы промисов, объедините свойства объектов
 // и выведите в консоль {name, age, city}
 
+/*
+let p1 = new Promise((res) => {
+    setTimeout(() => res({ name: "Anna" }), 2000)
+})
+let p2 = new Promise((res) => {
+    setTimeout(() => res({age: 16}), 3000)
+})
+let p3 = new Promise((res) => {
+    setTimeout(() => res({city: ''}), 4000)
+})
 
+Promise.all([p1, p2, p3]).then(
+    (data) => console.log(Object.assign(...data))
+)
+*/
 
 // just a plug
-export default ()=>{};
+export default () => {
+};
