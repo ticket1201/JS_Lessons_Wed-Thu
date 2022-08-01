@@ -8,6 +8,13 @@ console.log('lesson 4');
 // Создайте промис, который постоянно находиться в состоянии pending.
 // В конструкторе промиса выведите в консоль сообщение "Promise is created".
 
+/*let p = new Promise( (res) => {
+    console.log("Promise is created")
+} )
+
+setTimeout( ()=>{
+    console.log(p)
+},3000 )*/
 
 // Task 02
 // Создайте промис, который после создания сразу же переходит в состояние resolve
