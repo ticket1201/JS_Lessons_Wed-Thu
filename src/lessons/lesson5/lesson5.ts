@@ -106,6 +106,21 @@ console.log(counter.setCurrentCount(10).increment().increment().increment().decr
 // Написать функцию конструктор myFirstConstructorFunc которая принимает 2 параметра name и age и возвращает объект
 // у которого будут эти свойства и метод greeting из Task 01
 
+/*type userType = { name: string, age: number, greeting: () => string }
+
+function MyFirstConstructorFunc(this: userType, name: string, age: number) {
+    this.name = name;
+    this.age = age
+
+    // @ts-ignore
+    this.greeting = someObj.greeting
+}
+
+// @ts-ignore
+let user: userType = new MyFirstConstructorFunc('Vasya', 13)
+
+console.log(user.greeting())*/
+
 // Task 05 есть 2 объекта One и Two. С помощью bind и метода sayHello заставьте поздороваться объект One
 
 let One = {name: 'One'};
