@@ -144,6 +144,23 @@ One.sayHello()
 // greeting - используется функция sayHello из Task 05
 // можно использовать @ts-ignore
 
+let helperObj = {
+    name: 'helperObj',
+    age: null,
+    changeName: function (newName:string){
+        this.name = newName
+    },
+    setAge: function (age: number){
+        // @ts-ignore
+        this.age = age
+    },
+    greeting: Two.sayHello
+}
+
+/*helperObj.setAge(12)
+helperObj.changeName('leha');
+console.log(helperObj.greeting())*/
+
 // Bind
 // 1) Дана функция sumTwoNumbers, реализовать функцию bindNumber которая принимает функцию sumTwoNumbers и число, и
 // возвращает другую функцию, которое также принимает число и возвращает сумму этих чисел. Замыкание использовать нельзя
