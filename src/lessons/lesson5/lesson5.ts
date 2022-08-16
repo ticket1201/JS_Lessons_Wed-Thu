@@ -51,6 +51,27 @@ console.log(someObj.greeting())*/
 // rest current count - устанавливает значение счетчика равным 0
 // все методы должны ссылаться на сам объект
 
+/*let counter = {
+    count: 0,
+    getCurrentCount(){
+        return this.count
+    },
+    setCurrentCount(value:number){
+        this.count = value
+    },
+    resetCurrentCount(){
+        this.count = 0
+    },
+    increment(){
+        this.count++
+    },
+    decrement(){
+        this.count--
+    },
+}
+
+console.log(counter.setCurrentCount())*/
+
 // Task 03
 // переделайте код из Task 02, что бы сработал следующий код:
 // counter.setCurrentCount(10).increment().increment().increment().decrement().getCurrentCount() // 12
