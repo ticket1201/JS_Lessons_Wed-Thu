@@ -28,12 +28,19 @@ console.log('Lesson 5');
 type someObjType = {
     name: string;
     age: number;
+    greeting?: () => string
 }
 
-let someObj:someObjType = {
+let someObj: someObjType = {
     name: 'Eugene',
     age: 32
 }
+
+someObj.greeting = function () {
+    return `My name is ${this.name}. I am ${this.age}`
+}
+/*
+console.log(someObj.greeting())*/
 
 // Task 02
 // реализовать счетчик counter в виде объекта со следующими методами:
