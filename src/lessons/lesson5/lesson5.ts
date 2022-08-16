@@ -164,7 +164,17 @@ console.log(helperObj.greeting())*/
 // Bind
 // 1) Дана функция sumTwoNumbers, реализовать функцию bindNumber которая принимает функцию sumTwoNumbers и число, и
 // возвращает другую функцию, которое также принимает число и возвращает сумму этих чисел. Замыкание использовать нельзя
-function sumTwoNumbers(a:number,b:number):number {return a + b};
+function sumTwoNumbers(a: number, b: number): number {
+    return a + b
+}
+
+/*function bindNumber(fn:any,num:any){
+    return fn.bind(null,num)
+}
+
+console.log(bindNumber(sumTwoNumbers, 1)(3))*/
+
+
 
 // 2) Напишите функцию которая принимает первым аргументом объект One, а вторым helperObj. Данная функция
 // возвращает другую функцию которая принимает строку в качестве аргумента и устанавливает ее свойству name объекта One
