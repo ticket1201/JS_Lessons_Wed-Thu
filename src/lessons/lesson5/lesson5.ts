@@ -202,6 +202,14 @@ console.log(bindNumber(sumTwoNumbers, 1)(3))*/
 
 // Реализовать задачи 2-4 из Bind с помощью Call
 
+//2
+
+/*function helper(obj: any, obj2: any) {
+    function changeName(str:string){
+        obj2.changeName.call(obj, str)
+    }
+    return changeName
+}
 
 
 // just a plug
