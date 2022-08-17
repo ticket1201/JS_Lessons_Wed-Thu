@@ -147,10 +147,10 @@ One.sayHello()
 let helperObj = {
     name: 'helperObj',
     age: null,
-    changeName: function (newName:string){
+    changeName: function (newName: string) {
         this.name = newName
     },
-    setAge: function (age: number){
+    setAge: function (age: number) {
         // @ts-ignore
         this.age = age
     },
@@ -175,9 +175,17 @@ function sumTwoNumbers(a: number, b: number): number {
 console.log(bindNumber(sumTwoNumbers, 1)(3))*/
 
 
-
 // 2) Напишите функцию которая принимает первым аргументом объект One, а вторым helperObj. Данная функция
 // возвращает другую функцию которая принимает строку в качестве аргумента и устанавливает ее свойству name объекта One
+
+// function helper(obj: any, obj2: any) {
+//         return obj2.changeName.bind(obj)
+// }
+//
+// let newName = helper(One, helperObj)
+// newName('serega')
+// console.log(One)
+
 // 3) Одной строкой установить с помощью helperObj объекту Two поле age в значение 30
 // 4) Создать метод hi у объекта One, который всегда вызывает метод greeting объекта helperObj от имени Two
 
