@@ -194,6 +194,12 @@ console.log(bindNumber(sumTwoNumbers, 1)(3))*/
 
 // 4) Создать метод hi у объекта One, который всегда вызывает метод greeting объекта helperObj от имени Two
 
+// @ts-ignore
+// One.hi = helperObj.greeting.bind(Two)
+//
+// // @ts-ignore
+// One.hi()
+
 // Реализовать задачи 2-4 из Bind с помощью Call
 
 
