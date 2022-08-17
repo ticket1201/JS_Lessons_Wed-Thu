@@ -187,6 +187,11 @@ console.log(bindNumber(sumTwoNumbers, 1)(3))*/
 // console.log(One)
 
 // 3) Одной строкой установить с помощью helperObj объекту Two поле age в значение 30
+
+// helperObj.setAge.bind(Two, 30)();
+// console.log(Two)
+
+
 // 4) Создать метод hi у объекта One, который всегда вызывает метод greeting объекта helperObj от имени Two
 
 // Реализовать задачи 2-4 из Bind с помощью Call
