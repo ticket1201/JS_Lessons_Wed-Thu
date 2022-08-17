@@ -211,6 +211,23 @@ console.log(bindNumber(sumTwoNumbers, 1)(3))*/
     return changeName
 }
 
+let newName = helper(One, helperObj)
+newName('serega')
+console.log(One)*/
+
+//3
+
+// helperObj.setAge.call(Two, 30)
+
+//4
+
+// @ts-ignore
+// One.hi = function(){
+//     helperObj.greeting.call(Two)
+// }
+//
+// // @ts-ignore
+// One.hi()
 
 // just a plug
 export default () => {};
