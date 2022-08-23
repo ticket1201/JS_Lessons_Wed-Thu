@@ -1,17 +1,17 @@
 console.log('Lesson 7');
 
 // __Proto__
-// https://learn.javascript.ru/prototype-inheritance
-// https://habr.com/ru/post/518360/
-// https://learn.javascript.ru/native-prototypes
+// https://learn.javascript.ru/prototype-inheritance +
+// https://habr.com/ru/post/518360/ +
+// https://learn.javascript.ru/native-prototypes +
 
 // Prototype
-// https://learn.javascript.ru/function-prototype
-// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+// https://learn.javascript.ru/function-prototype +
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype +
 
 
-// https://www.youtube.com/watch?v=aQkgUUmUJy4&t=21s
-// https://www.youtube.com/watch?v=b55hiUlhAzI
+// https://www.youtube.com/watch?v=aQkgUUmUJy4&t=21s +
+// https://www.youtube.com/watch?v=b55hiUlhAzI +
 
 
 //Task 01
@@ -20,6 +20,27 @@ console.log('Lesson 7');
 // walk => `${this.name} walking`
 // проверить, что методы работают
 
+
+// class Animal {
+//     name: string;
+//     constructor(name:string) {
+//         this.name = name
+//     }
+//
+//     eat() {
+//         return console.log(`${this.name} eating`)
+//     }
+//
+//     sleep() {
+//         return console.log(`${this.name} sleeping`)
+//     }
+//
+//     walk() {
+//         return console.log(`${this.name} walking`)
+//     }
+// }
+//
+// let animal = new Animal('Animal')
 
 //Task 02
 // Реализовать класс Monkey на базе класса Animal,  конструктор принимает name(по умолчанию 'Monkey') в качестве
