@@ -80,6 +80,57 @@ console.log('Lesson 7');
 // Task 04
 // Реализовать таски 01-03 через функции конструкторы в отдельном JS файле, реализовать наследование
 
+// function Animal(this: any) {
+//     this.name = 'Animal'
+//     this.eat = function () {
+//         return console.log(`${this.name} eating`)
+//     }
+//     this.sleep = function () {
+//         return console.log(`${this.name} sleeping`)
+//     }
+//     this.walk = function () {
+//         return console.log(`${this.name} walking`)
+//     }
+// }
+//
+//
+// // @ts-ignore
+// let animal = new Animal()
+//
+//
+// function Monkey(this: any) {
+//     this.name = 'Monkey'
+//     this.roar = function () {
+//         return console.log(`${this.name} is roaring`)
+//     }
+//     this.climb = function () {
+//         return console.log(`${this.name} is climbing`)
+//     }
+// }
+//
+// Monkey.prototype = animal
+//
+//
+// // @ts-ignore
+// let monkey = new Monkey()
+//
+// function Human(this:any){
+//     this.name = 'Human'
+//     this.speak = function(){
+//          return console.log(`${this.name} is speaking`)
+//      }
+//     this.think = function(){
+//         return console.log(`${this.name} is thinking`)
+//     }
+// }
+//
+// Human.prototype = monkey
+//
+// // @ts-ignore
+// let human = new Human()
+//
+// console.dir(human)
+
 
 // Task 05
 // Используя метод Apply реализовать свой собственный метод bind
