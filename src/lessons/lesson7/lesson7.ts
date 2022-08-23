@@ -64,6 +64,18 @@ console.log('Lesson 7');
 // параметра, реализовать методы speak и think аналогично классу Animal
 // проверить, что все методы работают
 
+// class Human extends Monkey{
+//     speak(){
+//         return console.log(`${this.name} is speaking`)
+//     }
+//     think(){
+//         return console.log(`${this.name} is thinking`)
+//     }
+// }
+//
+// let human = new Human('Human')
+//
+// console.log(human.walk())
 
 // Task 04
 // Реализовать таски 01-03 через функции конструкторы в отдельном JS файле, реализовать наследование
