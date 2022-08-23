@@ -47,6 +47,17 @@ console.log('Lesson 7');
 // параметра, реализовать методы roar и climb аналогично классу Animal
 // проверить, что все методы работают
 
+// class Monkey extends Animal{
+//     roar(){
+//         return console.log(`${this.name} is roaring`)
+//     }
+//     climb(){
+//         return console.log(`${this.name} is climbing`)
+//     }
+// }
+//
+// let monkey = new Monkey('Monkey')
+// console.log(monkey.walk())
 
 //Task 03
 // Реализовать класс Human на базе класса Monkey, конструктор принимает name(по умолчанию 'Human') в качестве
