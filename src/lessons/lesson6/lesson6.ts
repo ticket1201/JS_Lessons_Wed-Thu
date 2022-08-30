@@ -192,6 +192,38 @@ console.log(filterBank(arr))
 // Создать производный класс – грузовик, имеющий грузоподъемность кузова.
 // Определить функции переназначения марки и грузоподъемности.
 
+/*class Car{
+    mark
+    cilinder
+    power
+    constructor(mark = 'Ford', cilinder = 4, power = 80) {
+        this.mark = mark
+        this.cilinder = cilinder
+        this.power = power
+    }
+    print(){
+        console.log(this.mark, this.cilinder, this.power)
+    }
+}
+
+class Truck extends Car{
+    weigth
+    constructor(mark, cil, power, weight) {
+        super(mark, cil, power);
+        this.weigth = weight
+    }
+    print(){
+        super.print()
+        console.log(`max weight ${this.weigth}`)
+
+    }
+}
+
+let ford = new Car()
+ford.print()
+
+let truck = new Truck('Merc', 12, 300, 5000)
+truck.print()*/
 // just a plug
 export default () => {
 };
