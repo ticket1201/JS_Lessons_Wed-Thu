@@ -83,6 +83,62 @@ console.log(obj)*/
 // Создать метод выводящий время в строке формата HH:MM:SS
 // Создать класс по вышеуказанному описанию
 
+
+/*
+class Clock {
+    hour
+    min
+    sec
+
+    constructor() {
+        this.hour
+        this.min
+        this.sec
+    }
+
+    showTime(){
+        console.log(`${this.hour}:${this.min}:${this.sec}`)
+    }
+
+    setTime(h: number, m: number, s: number) {
+        this.setHour(h)
+        this.setMin(m)
+        this.setSec(s)
+    }
+
+    setHour(h: number) {
+        if (h >= 0 && h < 25) {
+            this.hour = h
+        } else {
+            console.log('Enter number between 0 and 24')
+        }
+    }
+
+    setMin(m: number) {
+        if (m >= 0 && m < 60) {
+            this.min = m
+        } else {
+            console.log('Enter number between 0 and 60')
+        }
+    }
+
+    setSec(s: number) {
+        if (s >= 0 && s < 60) {
+            this.sec = s
+        } else {
+            console.log('Enter number between 0 and 60')
+        }
+    }
+
+}
+
+let clock = new Clock()
+clock.setTime(12,33, 33)
+clock.setTime(25,63, 33)
+clock.showTime()
+*/
+
+
 // Task 04
 // Класс Покупатель: Фамилия, Имя, Адрес, Номер банковского счета;
 // Методы: установка значений атрибутов, получение значений атрибутов, вывод информации.
