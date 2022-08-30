@@ -135,6 +135,24 @@ console.log('Lesson 7');
 // Task 05
 // Используя метод Apply реализовать свой собственный метод bind
 
+/*function selfBind(){
+    function middle(th:object, fn: Function){
+        return fn.apply(th)
+    }
+   return middle
+}
+
+let obj = {
+    name: 'serega',
+    getName(){
+        return this.name
+    }
+}
+
+let fn = obj.getName
+let gett = selfBind()
+console.log(gett(obj, fn))*/
+
 
 // just a plug
 export default () => {};
