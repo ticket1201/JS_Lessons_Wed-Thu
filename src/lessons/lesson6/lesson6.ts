@@ -145,6 +145,48 @@ clock.showTime()
 // Создать массив объектов данного класса.
 // Вывести список покупателей в алфавитном порядке и список покупателей, у которых номер кредитной карточки находится в заданном диапазоне.
 
+/*
+class Buyer{
+    name:any
+    secName:any
+    address:any
+    bank:any
+    constructor(name = 'user',secName = 'semen', address = '322ulica', bank = '123') {
+        this.name = name
+        this.secName = secName
+        this.address = address
+        this.bank = bank
+    }
+    setter(pole:string, znach:string){
+        this[pole] = znach
+    }
+    getter(atr:string){
+        console.log(this[atr])
+    }
+    show(){
+        console.log(this)
+    }
+}
+
+let buyer = new Buyer()
+buyer.setter('secName', 'serega')
+buyer.getter('secName')
+buyer.show()
+
+let arr = [buyer, new Buyer('Leha', 'Simen', '', '333222111')]
+
+let sort = (arr) => {
+    return arr.sort((a,b) => a.name.localeCompare(b.name))
+}
+
+let filterBank = (arr) => {
+    return arr.filter((el) => el.bank > 100 && el.bank < 300)
+}
+
+console.log(sort(arr))
+console.log(filterBank(arr))
+*/
+
 // Task 05
 // Создать класс машина - имеющий марку, число цилиндров, мощность. Определить конструктор и функцию печати.
 // Создать производный класс – грузовик, имеющий грузоподъемность кузова.
