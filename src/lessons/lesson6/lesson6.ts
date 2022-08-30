@@ -12,6 +12,52 @@ console.log('Lesson 6');
 // Создать массив из десяти элементов такого типа, упорядочить записи по возрастанию среднего балла.
 // Добавить возможность вывода фамилий и номеров групп студентов, имеющих оценки, равные только 4 или 5.
 
+/*
+class People{
+    name
+    secName
+    groupN
+    score
+
+    constructor(name:string, secName: string, groupN: number, score: Array<number>) {
+        this.name = name
+        this.secName = secName
+        this.groupN = groupN
+        this.score = score
+    }
+
+}
+
+
+
+
+let student1 = new People('a', 'Al', 1, [5,1,0,5,5])
+let student2 = new People('b', 'Al', 1, [5,2,0,5,5])
+let student3 = new People('c', 'Al', 1, [5,3,0,5,5])
+let student4 = new People('d', 'Al', 1, [5,4,0,5,5])
+let student5 = new People('e', 'Al', 1, [5,5,0,5,5])
+let student6 = new People('f', 'Al', 1, [5,5,1,5,5])
+let student7 = new People('g', 'Al', 1, [5,5,2,5,5])
+let student8 = new People('h', 'Al', 1, [5,5,3,5,5])
+let student9 = new People('k', 'Al', 1, [5,5,4,5,5])
+let student10 = new People('l', 'Al', 1, [5,5,0,0,5])
+
+let arr = [student1, student2, student3, student4, student5, student6, student7, student8, student9, student10]
+
+let sortByAverage = (array:Array<any>):Array<any> => {
+    return array.sort( (a:any, b:any) => {
+       return a.score.reduce((pred:number,cur:number) => pred + cur, 0) - b.score.reduce((pred:number,cur:number) => pred + cur, 0)
+    })
+}
+
+let showOnlyFourFive = (array:Array<any>) => {
+    return array.filter(el => el.score.filter((num:number) => num > 3).length === 5)
+}
+
+console.log(showOnlyFourFive(arr))
+*/
+
+
 // Task 02
 // Создать класс с двумя переменными. Добавить конструктор с входными параметрами и инициализирующий члены класса по умолчанию.
 // Можно ли создать метод на экземпляре класса который будет удалять сам экземпляр класса?
