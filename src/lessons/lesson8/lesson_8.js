@@ -93,14 +93,16 @@ const tree = {
 
 // Task 6
 // Реализуйте функцию Foo, что бы все корректно работало
-
-function Book(name, author) {
-	this.name = name;
-	this.author = author;
-	return this;
-}
-
-// function Foo(Book, 'Учебник javascript', 'Петр Сергеев')
+//
+// function Book(name, author) {
+// 	this.name = name;
+// 	this.author = author;
+// 	return this;
+// }
+//
+// function Foo(fn, title, author){
+//     return fn.call(this, title, author)
+// }
 //
 // var book = Foo(Book, 'js', 'petr');
 // console.log(book.name);
