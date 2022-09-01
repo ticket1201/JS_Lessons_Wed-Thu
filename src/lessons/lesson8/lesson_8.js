@@ -85,11 +85,11 @@ const tree = {
 // Task 5
 // исправить код, что бы работал правильно
 
-for (var i = 0; i < 10; i++) {
-	setTimeout(function () {
-		console.log(i);
-	}, 100);
-}
+// for (let i = 0; i < 10; i++) {
+// 	setTimeout(function () {
+// 		console.log(i);
+// 	}, 100);
+// }
 
 // Task 6
 // Реализуйте функцию Foo, что бы все корректно работало
