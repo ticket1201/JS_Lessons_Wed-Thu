@@ -57,6 +57,31 @@ const tree = {
 		}]
 };
 
+
+/*function treeSum(tree){
+    if(tree.next===null) return tree.valueNode
+    return tree.valueNode + tree.next.map(el => treeSum(el)).reduce( (pred,cur) => pred + cur, 0)
+}*/
+
+
+//                                           POVTORI EWE RAZ!!! ETO NE UCHEBNAYA TREVOGA!!!
+// function treeSum(tree) {
+//     let res = 0
+//     let queue = [tree]
+//     while (queue.length){
+//         let curr = queue.pop()
+//         res += curr.valueNode
+//         if(curr.next){
+//             curr.next.forEach(subtree => queue.push(subtree))
+//         }
+//
+//     }
+//     return res
+// }
+//
+// console.log(treeSum(tree))
+
+
 // Task 5
 // исправить код, что бы работал правильно
 
