@@ -5,6 +5,15 @@
 // Task 2
 // Реализуйте необходимый код, что бы выражение (2).plus(3).minus(1) сработало и вернуло 4
 
+// Number.prototype.plus = function(n){
+// 	return this + n
+// }
+// Number.prototype.minus = function(n){
+// 	return this - n
+// }
+//
+// console.log((2).plus(3).minus(1))
+
 // Task 3
 // Реализуйте функцию, которая принимает следующие аргументы (строки) '*', '1', 'b', '1c', и возвращает строку '1*b*1c'
 
