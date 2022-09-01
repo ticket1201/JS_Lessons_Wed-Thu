@@ -110,6 +110,15 @@ const tree = {
 // Task 7
 // Реализовать функцию f: f(2, 3) -> 5, при вызове f(2)(3), тоже вернет 5
 
+// function f(a, b) {
+//     if (arguments.length === 2) {
+//         return a + b
+//     }
+//     return f.bind(this, a)
+// }
+
+// console.log(f(2)(3))
+
 // Task 8
 // Реализовать функцию f: f(1)(2)(3)() -> 6, f(0)(3)(1)(5)() -> 8
 
