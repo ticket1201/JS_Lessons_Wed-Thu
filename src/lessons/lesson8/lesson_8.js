@@ -122,6 +122,25 @@ const tree = {
 // Task 8
 // Реализовать функцию f: f(1)(2)(3)() -> 6, f(0)(3)(1)(5)() -> 8
 
+// function f(a) {
+//     let res = a
+//     let pred = a
+//
+//     function sum(b) {
+//         if (b === undefined) {
+//             return res
+//         } else {
+//            res += b
+//            pred = b
+//            return sum
+//         }
+//     }
+//
+//     return sum
+// }
+//
+// console.log(f(2)(2)(2)())
+
 // Task 9
 // Реализовать функции seven, plus, one, five, minus, two так, что бы следующие вызовы работали seven(plus(one())) -> 8. five(minus(two())) -> 3
 
