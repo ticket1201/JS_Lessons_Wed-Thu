@@ -144,6 +144,23 @@ const tree = {
 // Task 9
 // Реализовать функции seven, plus, one, five, minus, two так, что бы следующие вызовы работали seven(plus(one())) -> 8. five(minus(two())) -> 3
 
+/*let one = function (fn){
+   return fn === undefined ? 1 : fn.bind(null, 2)
+}
+let two = function (fn){
+   return fn === undefined ? 2 : fn.bind(null, 2)
+}
+
+
+let plus = function (num){
+    return num + arguments[0]
+}
+
+let minus = function (num){
+
+}
+
+console.log(one(plus()))*/
 // Task 10
 // Реализовать функцию сортировки массива пузырьком
 
