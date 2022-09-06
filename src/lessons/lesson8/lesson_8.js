@@ -164,6 +164,27 @@ console.log(one(plus()))*/
 // Task 10
 // Реализовать функцию сортировки массива пузырьком
 
+
+// POVTORI!!!1
+/*let arr = [1,5,3,8,7,2]
+
+let sort = function(arr){
+    let swap
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if(arr[i] > arr[j]){
+                swap = arr[i]
+                arr[i] = arr[j]
+                arr[j] = swap
+            }
+        }
+
+    }
+    return arr
+}
+
+console.log(sort(arr))*/
+
 // Task 11
 // Есть строка, состоящая из разных скобок - str = "())({}}{()][][", написать функцию проверки закрыты ли все.
 
