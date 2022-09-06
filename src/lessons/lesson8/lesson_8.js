@@ -188,6 +188,55 @@ console.log(sort(arr))*/
 // Task 11
 // Есть строка, состоящая из разных скобок - str = "())({}}{()][][", написать функцию проверки закрыты ли все.
 
+/*let strCheck = (str) => {
+    let obichnii = 0
+    let fig = 0
+    let kw = 0
+    for (let el of str) {
+        switch (el) {
+            case '(': {
+                obichnii += 1
+                break
+            }
+            case ')': {
+                obichnii -= 1
+                if (obichnii < 0) {
+                    return false
+                }
+                break
+            }
+            case '{': {
+                fig += 1
+                break
+            }
+            case '}': {
+                fig -= 1
+                if (fig < 0) {
+                    return false
+                }
+                break
+            }
+            case '[': {
+                kw += 1
+                break
+            }
+            case ']': {
+                kw -= 1
+                if (kw < 0) {
+                    return false
+                }
+                break
+            }
+        }
+    }
+    return !kw && !obichnii && !fig
+}*/
+
+//
+// google-site-verification=XfoNaJ4H0gmiQZUxRp57rlmsjgIcgH-mVL9Uq1K7O_c
+
+// console.log(strCheck('()({}){()}[][[]]{{{}}}'))
+
 // Task 12
 // Необходимо написать функцию, принимающую в аргументах массив целых чисел и возвращающую новый массив, состоящий только из уникальных значений первого массива.
 
