@@ -315,6 +315,23 @@ let bomb = new Bomb('1000')
 // в которой повторяющиеся буквы заменены количеством повторений.
 // rle('AVVVBBBVVXDHJFFFFDDDDDDHAAAAJJJDDSLSSSDDDD'); // => 'AV3B3V2XDHJF4D6HA4J3D2SLS3D4'
 
+/*let rle = function (str){
+    let res = [str[0]]
+    let num = 1
+    for (let i = 1; i < str.length; i++){
+        if(res[res.length - 1] === str[i]){
+            num += 1;
+        }
+        else{
+          res = [...res, num < 2 ? '' : num, str[i]];
+          num = 1
+        }
+    }
+    return res.join('')
+}
+
+console.log(rle('AAVVVBBBVVXDHJFFFFDDDDDDHAAAAJJJDDSLSSSDDDD'))*/
+
 // Task 18
 // Реализуйте функцию isSorted(), которая возвращает true или false в зависимости о того, отсортирован ли переданный ей числовой массив.
 
