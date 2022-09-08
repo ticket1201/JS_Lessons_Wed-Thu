@@ -292,6 +292,22 @@ const tree2 = {
 	]
 };
 
+/*function rtt(node){
+    let queue = []
+    let values = []
+    queue.push(node)
+    while(queue.length > 0){
+        let current = queue.shift()
+        values.push(current.value)
+        if(current.children){
+            current.children.forEach(el => queue.push(el))
+        }
+    }
+    return values
+}
+
+console.log(rtt(tree2))*/
+
 // Task 15
 // Необходимо написать функцию, возвращающую сумму всех вершин дерева из Task 14
 
