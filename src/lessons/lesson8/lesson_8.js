@@ -390,6 +390,28 @@ console.log(isSorted([1,2,3,5,6]))*/
 // missing([5, 1, 4, 2])               // 3
 // missing([1, 2, 3, 4])               // undefined
 
+// function missing(arr) {
+//     let copy = [...arr]
+//     copy.sort()
+//     if (copy.length === 0) {
+//         return
+//     } else if (copy[0] !== 1) {
+//         return 1;
+//     }
+//
+//     for (let i = 1; i < copy.length; i++) {
+//         if (copy[i] - copy[i - 1] !== 1) {
+//             return copy[i - 1] + 1
+//         }
+//     }
+// }
+//
+// console.log(missing([]))
+// console.log(missing([1, 4, 3]))
+// console.log(missing([2, 3, 4]))
+// console.log(missing([5, 1, 4, 2]))
+// console.log(missing([1, 2, 3, 4]))
+
 // Task 20
 // Реализуйте класс LinkedList, не используя встроенные массивы JavaScript ( [] ). Ваш LinkedList должен поддерживать лишь 2 метода: add() и has().
 // class LinkedList {...}
