@@ -311,6 +311,21 @@ console.log(rtt(tree2))*/
 // Task 15
 // Необходимо написать функцию, возвращающую сумму всех вершин дерева из Task 14
 
+/*function rtt(node){
+    let queue = []
+    let res = 0
+    queue.push(node)
+    while(queue.length > 0){
+        let current = queue.shift()
+        res += current.value
+        if(current.children){
+            current.children.forEach(el => queue.push(el))
+        }
+    }
+    return res
+}
+console.log(rtt(tree2))*/
+
 // Task 16
 // Надо реализовать «бомбу» (в виде функции-конструктора), которая получает на входе время, через которое взорвется и
 // некоторый «звук взрыва» (строку, которую вернет через заданное время).
