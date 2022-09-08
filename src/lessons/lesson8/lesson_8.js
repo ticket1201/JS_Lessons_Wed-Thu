@@ -366,6 +366,20 @@ console.log(rle('AAVVVBBBVVXDHJFFFFDDDDDDHAAAAJJJDDSLSSSDDDD'))*/
 // Task 18
 // Реализуйте функцию isSorted(), которая возвращает true или false в зависимости о того, отсортирован ли переданный ей числовой массив.
 
+/*function isSorted(arr){
+    let isIncrease = arr[0] < arr[1]
+    for(let i = 0; i < arr.length; i++){
+        for (let j = i+1; j < arr.length; j++) {
+            if(arr[i] < arr[j] !== isIncrease || arr[i] > arr[j] === isIncrease){
+                return false
+            }
+        }
+    }
+    return true
+}
+
+console.log(isSorted([1,2,3,5,6]))*/
+
 // Task 19
 // Реализуйте функцию missing(), которая принимает неотсортированный массив уникальных чисел (то есть, числа в нём не повторяются)
 // от 1 до некоего числа n, и возвращает число, отсутствующее в последовательности. Там может быть либо одно отсутствующее число,
