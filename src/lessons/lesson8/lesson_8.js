@@ -422,6 +422,54 @@ console.log(isSorted([1,2,3,5,6]))*/
 // list.has(4)                           // true
 // list.has(6)                           // false
 
+
+// class LinkedList {
+//     constructor(...props) {
+//         this.tree = {
+//             value: props[0],
+//             next: {
+//                 value: props[1],
+//                 next: {
+//                     value: props[2],
+//                     next: null
+//                 }
+//             }
+//         }
+//     }
+//
+//     add(num) {
+//         const node = {
+//             value: num,
+//             next: null
+//         }
+//         let current = this.tree
+//         while(current.next){
+//             current = current.next
+//         }
+//         current.next = node
+//     }
+//
+//     has(num) {
+//         let current = this.tree
+//         while(current){
+//             if(current.value === num){
+//                 return true
+//             }
+//             current = current.next
+//         }
+//         return false
+//     }
+// }
+//
+// let list = new LinkedList(1, 2, 3)
+//
+// list.add(4)                           // undefined
+// list.add(5)                           // undefined
+// console.log(list)
+// console.log(list.has(1) )                          // true
+// console.log(list.has(4)   )                        // true
+// console.log(list.has(6))                           // false
+
 // Task 21
 // Что выведет консоль?
 
